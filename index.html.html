@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .form{
+        width: 500px;
+        background-color: #fff;
+        margin: 50px auto;
+        padding: 40px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+h3{
+    font-size: 20px;
+    background-color: rgba(6, 188, 94, 0.314);
+    padding: 10px;
+}
+</style>
+<body>
+    <div class="form">
+        <h3 class="text-center">Online Registeration</h3>
+        <form action="">
+            <div class="row">
+                <div class="col-6">
+                    <label for="" class="form-label">First Name</label>
+                    <input type="text" name="" id="first_name" class="form-control">
+                </div>
+                <div class="col-6">
+                    <label for="" class="form-label">Last Name</label>
+                    <input type="text" name="" id="last_name" class="form-control">
+                </div>
+                <div class="col-12">
+                    <label for="" class="form-laebl">Email Address</label>
+                    <input type="email" name="" id="email" class="form-control">
+                </div>
+                <div class="col-12">
+                    <label for="" class="form-laebl">Company</label>
+                    <input type="text" name="" id="company" class="form-control">
+                </div>
+                <div class="col-12">
+                    <label for="" class="form-laebl">Physical Address</label>
+                    <input type="text" name="" id="address" class="form-control">
+                </div>
+                <div class="col-12">
+                    <label for="" class="form-laebl">Date of Birth</label>
+                    <input type="date" name="" id="dob" min="1999-1-1" max="2010-12-31" class="form-control">
+                </div>
+                
+            </div>
+            <div class="form-group d-flex justify-content-end">
+                <button type="button" class="btn btn-primary mt-3" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <table class="table text-center alin-middle" style="table-layout: fixed;">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Company</th>
+                    <th>Address</th>
+                    <th>Date of Birth</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+<script src="employee.js"></script>
